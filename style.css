@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body{
-  background: rgb(108, 182, 187);
+  background: #F6F7BD;
 }
 
 h1{
-  color: #c70f0f;
+  color: #BF4D28;
   font-size: 3em;
   line-height: 1em;
   margin-bottom: 15px;
@@ -18,7 +18,7 @@ p{
 }
 
 div{
-  color: #ffea00;
+  color: #BF4D28;
   font-family: sans-serif;
   line-height: 10px;
   margin: 2%;
@@ -26,5 +26,5 @@ div{
 
 #canvas{
   margin-left: 2%;
-  background: linear-gradient(#5e5e5e, #838383);
+  background: linear-gradient(#80BCA3, #B6D8C0);
 }
