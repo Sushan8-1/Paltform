@@ -24,3 +24,12 @@ var canvas = document.getElementById("canvas"),
     gravity = 0.4,
     boxes = 0.4,
     powerup = [];
+
+powerup.push({
+  x: 810,
+  y: 250,
+  width: 20,
+  height: 20,
+  color: '#BF4D28',
+  effect: 'shrink',
+});
