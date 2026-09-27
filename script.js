@@ -22,7 +22,7 @@ var canvas = document.getElementById("canvas"),
     velY: 0,
     jumping: false,
     grounded: false,
-    color: "#E6AC27",
+    color: "Black",
   },
   keys = [],
   friction = 0.8,
@@ -35,7 +35,7 @@ powers.push({
   y: 250,
   width: 20,
   height: 20,
-  color: "#BF4D28",
+  color: "Purple",
   effect: "shrink",
 });
 
@@ -44,7 +44,7 @@ powers.push({
   y: 150,
   width: 20,
   height: 20,
-  color: "#BF4D28",
+  color: "Blue",
   effect: "gravity",
 });
 
@@ -66,7 +66,7 @@ powers.push({
   y: 365,
   width: 20,
   height: 20,
-  color: "#2A5D77",
+  color: "darkblue",
   effect: "win",
   stay: true,
 });
@@ -222,10 +222,9 @@ function update() {
     var cx = powers[j].x + 0.5 * powers[j].width,
       cy = powers[j].y + 0.5 * powers[j].height;
     ctx.translate(cx, cy);
-    ctx.rotate((Math.PI / 180) * 45);
     if (powers[j].effect === "teleport") {
       ctx.rotate((Math.PI / 180) * powers[j].rotate);
-      powers[j].rotate = (Math.PI / 180) * powers[j].rotate;
+      powers[j].rotate = powers[j].rotate;
     }
     ctx.translate(-cx, -cy);
     ctx.fillStyle = powers[j].color;
@@ -300,3 +299,4 @@ document.body.addEventListener("keyup", function (e) {
 window.addEventListener("load", function () {
   update();
 });
+
